@@ -37,8 +37,6 @@ Pod::Spec.new do |s|
   }
 
   s.requires_arc = true
-  s.preserve_paths = '**/*.framework'
-  s.vendored_frameworks = '**/*.framework'
 
    s.resource_bundles = {
      'EaseIMKit' => ['EaseIMKit/Assets/**/*.{png,jpeg,gif,jpg}']
