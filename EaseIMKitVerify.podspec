@@ -13,7 +13,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name = 'EaseIMKit'
+  s.name = 'EaseIMKitVerify'
   s.version = '0.1.0'
   s.summary = 'easemob im sdk UIKit'
 
