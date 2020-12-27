@@ -22,13 +22,15 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/dujiepeng/EaseIMKit'
   s.license = 'MIT'
   s.author = { 'dujiepeng' => '347302029@qq.com' }
-  s.source = { :git => 'https://github.com/MThrone/EaseIMKit.git', :branch => 'packageTest' }
+  #s.source = { :git => 'https://github.com/MThrone/EaseIMKit.git', :branch => 'packageTest' }
+
+  s.source = {:http => 'https://downloadsdk.easemob.com/downloads/EaseKit/EaseIMKitVerify_0.1.0.zip' }
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'EaseIMKit/Classes/**/*.{h,m,mm}'
+  #s.source_files = 'EaseIMKit/Classes/**/*.{h,m,mm}'
 
-  s.public_header_files = 'EaseIMKit/**/PublicHeaders/*.h'
+ #s.public_header_files = 'EaseIMKit/**/PublicHeaders/*.h'
 
   s.xcconfig = {
     'VALID_ARCHS' => '',
