@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'EaseIMKit/Classes/**/*.{h,m,mm}'
 
- #s.public_header_files = 'EaseIMKit/**/PublicHeaders/*.h'
+ s.public_header_files = 'EaseIMKit/**/PublicHeaders/*.h'
 
  s.xcconfig = {
     'VALID_ARCHS' => 'arm64, x86_64',
