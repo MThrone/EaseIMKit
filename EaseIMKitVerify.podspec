@@ -40,9 +40,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-   s.resource_bundles = {
-     'EaseIMKit' => ['EaseIMKit/Assets/**/*.{png,jpeg,gif,jpg}']
-   }
+   #s.resource_bundles = {
+     #'EaseIMKit' => ['EaseIMKit/Assets/**/*.{png,jpeg,gif,jpg}']
+   #}
 
    s.frameworks = 'UIKit'
    s.libraries = 'stdc++'
