@@ -14,7 +14,7 @@
 
 Pod::Spec.new do |s|
   s.name = 'EaseIMKitVerify'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.summary = 'easemob im sdk UIKit'
 
   s.description = 'easemob sdk ui kit'
@@ -22,36 +22,32 @@ Pod::Spec.new do |s|
   s.platform = :ios, '11.0'
 
   s.homepage = 'https://github.com/dujiepeng/EaseIMKit'
-  #s.license = 'MIT'
-
-  s.license = { :type => 'Copyright', :text => 'Hyphenate Inc. 2017' }
+  s.license = 'MIT'
 
   s.author = { 'dujiepeng' => '347302029@qq.com' }
   #s.source = { :git => 'https://github.com/MThrone/EaseIMKit.git', :branch => 'packageTest' }
 
-  s.source = {:http => 'https://downloadsdk.easemob.com/downloads/EaseKit/EaseIMKitVerify_0.1.0.zip' }
+  s.source = { :git => 'https://github.com/MThrone/EaseIMKit.git', :tag => '#{s.version}'}
 
   #s.ios.deployment_target = '11.0'
 
-  #s.source_files = 'EaseIMKit/Classes/**/*.{h,m,mm}'
+  s.source_files = 'EaseIMKit/Classes/**/*.{h,m,mm}'
 
  #s.public_header_files = 'EaseIMKit/**/PublicHeaders/*.h'
 
  s.xcconfig = {
-    #'VALID_ARCHS' => '',
-    #'EXCLUDED_ARCHS' => 'armv7, armv7s, i386',
+    'VALID_ARCHS' => 'arm64, x86_64',
+    'EXCLUDED_ARCHS' => 'armv7, armv7s, i386',
     'OTHER_LDFLAGS' => '-ObjC'
   }
 
   s.requires_arc = true
 
-  s.vendored_frameworks = '**/*.framework'
-
    #s.resource_bundles = {
      #'EaseIMKit' => ['EaseIMKit/Assets/**/*.{png,jpeg,gif,jpg}']
    #}
 
-   s.frameworks = 'UIKit'
+   s.frameworks = 'UIKit', 'Foundation'
    s.libraries = 'stdc++'
 
    #s.dependency 'Hyphenate'
